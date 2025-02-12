@@ -88,7 +88,7 @@ export default function Todos({ loaderData }: Route.ComponentProps) {
                 <button
                   name="action"
                   value="delete"
-                  className="h-full cursor-pointer items-center justify-center rounded px-2 py-1 font-extrabold text-rose-700 opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 hover:bg-rose-300/50 dark:text-rose-400 dark:hover:bg-rose-700/50"
+                  className="h-full cursor-pointer items-center justify-center rounded px-2 py-1 font-extrabold text-rose-700 opacity-0 group-hover:opacity-100 group-has-[:focus-visible]:opacity-100 hover:bg-rose-300/50 dark:text-rose-400 dark:hover:bg-rose-700/50"
                 >
                   ✘
                 </button>
