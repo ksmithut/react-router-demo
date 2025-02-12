@@ -20,7 +20,6 @@ export default function HomePage({ loaderData }: Route.ComponentProps) {
   return (
     <div className="w-screen">
       <nav className="flex w-full justify-between bg-black/10 p-3 dark:bg-white/10">
-        <div></div>
         <ul className="flex gap-5">
           {session && (
             <>
