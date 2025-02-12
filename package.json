@@ -1,0 +1,47 @@
+{
+  "name": "unnamed",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "react-router build",
+    "dev": "react-router dev",
+    "start": "react-router-serve ./build/server/index.js",
+    "typecheck": "react-router typegen && tsc",
+    "format": "prettier --write .",
+    "lint": "prettier --check .",
+    "db:push": "node --env-file-if-exists .env ./node_modules/.bin/drizzle-kit push",
+    "db:generate": "node --env-file-if-exists .env ./node_modules/.bin/drizzle-kit generate",
+    "db:migrate": "node --env-file-if-exists .env ./node_modules/.bin/drizzle-kit migrate",
+    "db:studio": "node --env-file-if-exists .env ./node_modules/.bin/drizzle-kit studio"
+  },
+  "devDependencies": {
+    "@react-router/dev": "^7.1.5",
+    "@tailwindcss/typography": "^0.5.16",
+    "@tailwindcss/vite": "^4.0.6",
+    "@types/node": "^22.13.1",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "prettier": "^3.5.0",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "tailwindcss": "^4.0.6",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0",
+    "vite-tsconfig-paths": "^5.1.4"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.14.0",
+    "@react-router/fs-routes": "^7.1.5",
+    "@react-router/node": "^7.1.5",
+    "@react-router/serve": "^7.1.5",
+    "argon2": "^0.41.1",
+    "clsx": "^2.1.1",
+    "drizzle-kit": "^0.30.4",
+    "drizzle-orm": "^0.39.3",
+    "isbot": "^5.1.22",
+    "marked": "^15.0.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router": "^7.1.5",
+    "valibot": "^1.0.0-rc.0"
+  }
+}
